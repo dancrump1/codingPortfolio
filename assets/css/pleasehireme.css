@@ -1,0 +1,101 @@
+body {
+    background: black;
+    display: grid;
+    grid-template: 1fr .5fr / 1fr;
+    grid-gap: 30px;
+}
+
+#landing-container {
+    background-color: blanchedalmond;
+    background: url(../images/grey-pb-photo.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    display: flex;
+
+}
+
+#nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-content: center;
+    position: fixed;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+h1 {
+    font-size: 120px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    background: -webkit-linear-gradient(rgb(74, 10, 98), rgb(32, 174, 49));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline-container {
+    background-color: white;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.early-years-container {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 15px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+}
+
+.rest-of-timeline {
+    background-color: brown;
+    text-align: center;
+    background: url(../images/willsmith.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    stroke-width: 3px;
+}
+
+#early-years-title{
+    font-size: 40px;
+}
+#moving-forward-text{
+    font-size: 40px;
+}
+#first-hw-picture {}
+
+#biography-button {}
+
+#first-project {}
