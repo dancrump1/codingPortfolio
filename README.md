@@ -1,2 +1,1 @@
-# codingPortfolio
-From 1st homework to present day
+https://dancrump1.github.io/codingPortfolio/
