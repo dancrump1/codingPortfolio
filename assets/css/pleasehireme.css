@@ -1,15 +1,15 @@
 body {
     background: black;
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
     /* grid-gap: 5px; */
 }
 
-                                                                        /* front full page */
+/* front full page */
 #landing-container {
     /* background-color: blanchedalmond; */
     /* background: url(../images/grey-pb-photo.jpg); */
-    background-image: linear-gradient(green, purple);
+    background-image: linear-gradient(rgb(0, 128, 0), rgb(0, 86, 0));
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,19 +20,97 @@ body {
 }
 
 
-                                                        /* three buttons at the top of the page */
-#nav-bar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    align-content: center;
-    position: fixed;
+
+/* Landing page title */
+h1 {
+    font-size: 120px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    /* background: -webkit-linear-gradient(rgb(99, 14, 130), rgb(32, 174, 49)); */
+    /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
-li{
+.title-page-pic {
+    padding-bottom: 10px;
+}
+
+#rotate90 {
+    transform: rotate(90deg)
+}
+
+/* holder for both timelines */
+.timeline-container {
+    background-color: black;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    /* grid-gap: 3px; */
+    height: 100vh;
+}
+
+
+/* Stuff before project 1 */
+.early-years-container {
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(rgb(0, 86, 0), green);
+    text-align: center;
+}
+
+
+/* timeline w/ project 1 */
+.rest-of-timeline {
+    text-align: center;
+    background: url(../images/willsmith.png);
+    background-position: right top;
+    /* background-color: brown; */
+    background-image: linear-gradient(green, rgb(0, 86, 0));
+
+    background-repeat: no-repeat;
+
+}
+
+/* holds all projects in both containers */
+.projects-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr
+}
+
+
+header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    stroke-width: 3px;
+    background-position-y: center;
+}
+
+#early-years-title {
+    font-size: 40px;
+}
+
+#moving-forward-text {
+    font-size: 40px;
+}
+
+#first-hw-picture {}
+
+#biography-button {}
+
+#first-project {}
+
+.contact-container {
+    /* background-color: blue; */
+    background-image: linear-gradient(rgb(0, 86, 0), green)
+}
+
+
+
+
+/* three buttons at the top of the page */
+
+li {
     float: left;
+
 }
 
 li a {
@@ -43,80 +121,19 @@ li a {
     text-decoration: none;
 }
 
-li a:hover{
-    background-color: #111;
-}
-
-
-                                                                /* Landing page title */
-h1 {
-    font-size: 120px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 2px;
-    /* background: -webkit-linear-gradient(rgb(99, 14, 130), rgb(32, 174, 49)); */
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}
-
-
-/* holder for both timelines */
-.timeline-container {
+li a:hover {
     background-color: black;
-    display: grid;
-    grid-template: .25fr .25fr /  1fr;
-    /* grid-gap: 3px; */
 }
 
 
-                                                                    /* Stuff before project 1 */
-.early-years-container {
-    /* background-color: aquamarine; */
-    background-image: linear-gradient(black, green);
-    text-align: center;
+#myNavbar {
+    display: inline-block;
+    list-style-type: none;
 }
 
-
-                                                                    /* timeline w/ project 1 */
-.rest-of-timeline {
-    text-align: center;
-    background: url(../images/willsmith.png);
-    background-position: right top;
-    /* background-color: brown; */
-    background-image: linear-gradient(green, black);
-
-    background-repeat: no-repeat;
-
-}
-
-                                                    /* holds all projects in both containers */
-.projects-container {
-    display: grid;
-    grid-template: 1fr / .33fr .33fr .34fr
-}
-
-
-header {
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    stroke-width: 3px;
-}
-
-#early-years-title{
-    font-size: 40px;
-}
-#moving-forward-text{
-    font-size: 40px;
-}
-#first-hw-picture {}
-
-#biography-button {}
-
-#first-project {}
-
-.contact-container{
-    /* background-color: blue; */
-    background-image: linear-gradient( purple, green)
+.top {
+    position: sticky;
+    /* width: 100%; */
+    z-index: 1;
+    top: 0
 }
