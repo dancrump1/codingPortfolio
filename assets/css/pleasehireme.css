@@ -5,7 +5,7 @@ body {
     /* grid-gap: 5px; */
 }
 
-/* front full page */
+                                                                                /* front full page */
 #landing-container {
     /* background-color: blanchedalmond; */
     /* background: url(../images/grey-pb-photo.jpg); */
@@ -21,7 +21,7 @@ body {
 
 
 
-/* Landing page title */
+                                                                        /* Landing page title */
 h1 {
     font-size: 120px;
     -webkit-text-stroke-color: black;
@@ -39,7 +39,7 @@ h1 {
     transform: rotate(90deg)
 }
 
-/* holder for both timelines */
+                                                                    /* holder for both timelines */
 .timeline-container {
     background-color: black;
     display: grid;
@@ -49,7 +49,7 @@ h1 {
 }
 
 
-/* Stuff before project 1 */
+                                                                                /* Stuff before project 1 */
 .early-years-container {
     /* background-color: aquamarine; */
     background-image: linear-gradient(rgb(0, 86, 0), green);
@@ -57,7 +57,7 @@ h1 {
 }
 
 
-/* timeline w/ project 1 */
+                                                                        /* timeline w/ project 1 */
 .rest-of-timeline {
     text-align: center;
     background: url(../images/willsmith.png);
@@ -69,11 +69,11 @@ h1 {
 
 }
 
-/* holds all projects in both containers */
-/* .projects-container {
+                                                            /* holds all projects in both containers */
+.projects-container {
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr
-} */
+}
 
 
 header {
@@ -100,7 +100,8 @@ header {
 
 .contact-container {
     /* background-color: blue; */
-    background-image: linear-gradient(rgb(0, 86, 0), green)
+    background-image: linear-gradient(rgb(0, 86, 0), green);
+    
 }
 
 
@@ -135,5 +136,25 @@ li a:hover {
     position: sticky;
     /* width: 100%; */
     z-index: 1;
-    top: 0
+    top: 0;
+}
+
+.bottom{
+/* display: table-cell;
+vertical-align: bottom; */
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-image: linear-gradient(green, rgb(0, 86, 0))
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555
 }
