@@ -103,7 +103,8 @@ header {
 
 .contact-container {
     /* background-color: blue; */
-    background-image: linear-gradient(rgb(0, 86, 0), green);
+    background-image: linear-gradient(green, rgb(0, 86, 0));
+    height: 100vh;
     
 }
 
