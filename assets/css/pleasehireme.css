@@ -9,18 +9,26 @@ body {
 #landing-container {
     /* background-color: blanchedalmond; */
     /* background: url(../images/grey-pb-photo.jpg); */
-    background-image: linear-gradient(rgb(0, 128, 0), rgb(0, 86, 0));
+    /* background-image: linear-gradient(rgb(0, 128, 0), rgb(0, 86, 0)); */
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     display: flex;
     height: 100vh;
+    background-color: green;
 
 }
 
+#transition1{
+    background-image: linear-gradient(green, blue);
+    height: 800px;
+}
 
-
+#transition2{
+    background-image: linear-gradient(blue, purple);
+    height: 800px;
+}
 
 /* Landing page title */
 h1 {
@@ -53,10 +61,13 @@ h1 {
 /* Stuff before project 1 */
 .early-years-container {
     /* background-color: aquamarine; */
-    background-image: linear-gradient(rgb(0, 86, 0), green);
+background-color: blue;
     text-align: center;
 }
 
+#transition2{
+    background-image: linear-gradient(blue, purple)
+}
 
 /* timeline w/ project 1 */
 .rest-of-timeline {
@@ -64,8 +75,8 @@ h1 {
     background: url(../images/willsmith.png);
     background-position: right top;
     /* background-color: brown; */
-    background-image: linear-gradient(green, rgb(0, 86, 0));
-
+    /* background-image: linear-gradient(green, rgb(0, 86, 0)); */
+background-color: blue;
     background-repeat: no-repeat;
 
 }
@@ -103,9 +114,9 @@ header {
 
 .contact-container {
     /* background-color: blue; */
-    background-image: linear-gradient(green, rgb(0, 86, 0));
+    /* background-image: linear-gradient(green, rgb(0, 86, 0)); */
     height: 100vh;
-
+background-color: purple;
 }
 
 
