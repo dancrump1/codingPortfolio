@@ -98,12 +98,14 @@ text-align: center;
     /* background-image: linear-gradient(green, rgb(0, 86, 0)); */
     height: 100vh;
 background-color: #047b0c;
+display: grid;
+grid-template: 1fr 1fr / 1fr;
 }
 
 
 #contact-info-container{
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr  1fr;
 text-align: center;
 }
 

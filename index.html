@@ -23,8 +23,9 @@
             <nav>
                 <ul>
                     <li><a href="#top">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio/portfolio-1">Portfolio-Highlight</a></li>
+                    <li><a href="#portfolio/portfolio-2">Portfolio-General</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -33,7 +34,7 @@
     <div id="fullpage">
 
 
-        <div class="fp-section">
+        <div class="fp-section" data-anchor= "top"> 
             <div id="landing-container">
 
                 <h1>Daniel Crump</h1>
@@ -50,13 +51,13 @@
         <div id="transition1"> </div>
 
 
-        <div class="fp-section">
+        <div class="fp-section" data-anchor="portfolio">
 
             <div class="timeline-container">
 
                 <!-- Second part of portfolio -->
                 <div class="rest-of-timeline">
-                        <div class="fp-slide">
+                        <div class="fp-slide" data-anchor="portfolio-1">
                             <p id="moving-forward-text">What I'm proud of</p>
                             <div class="projects-container">
     
@@ -74,7 +75,7 @@
                 <!-- First part of portfolio -->
 
                 <div class="early-years-container">
-                    <div class="fp-slide">
+                    <div class="fp-slide" data-anchor="portfolio-2">
                         <p id="early-years-title">Start of my coding experience</p>
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
@@ -156,7 +157,7 @@
         <div id="transition2"> </div>
 
 
-        <div class="fp-section contact-container">
+        <div class="fp-section contact-container" data-anchor="contact">
             <a href="contact"></a>
             <!-- Contact section -->
             <div class="contact-container">
