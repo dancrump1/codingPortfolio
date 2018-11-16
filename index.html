@@ -8,32 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/pleasehireme.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
-    <script src="assets/js/seriouslypleasehireme.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/fullpage.js"></script>
 
 </head>
 
 <body>
-
     <!-- Landing page section -->
+
+    <header>
+        <div class="container">
+            <h1 class="logo"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div id="fullpage">
+
+
         <div class="fp-section">
             <div id="landing-container">
 
-                <header>
-                    <h1>Daniel Crump</h1>
-
-                    <p>I began coding Sept 11th, 2018</p><br>
-                    <p>You miss 100% of the shots you don't take</p>
-
-
-                </header>
+                <h1>Daniel Crump</h1>
+                <p id="quote-text">I began coding Sept 11th, 2018<br>
+                    This has been my journey so far...</p>
 
             </div>
         </div>
+
+
         <!-- Portfolio section -->
-        <div id="transition1">    </div>
+
+
+        <div id="transition1"> </div>
 
 
         <div class="fp-section">
@@ -42,68 +56,109 @@
 
                 <!-- First part of portfolio -->
 
-                    <div class="early-years-container">
-                            <div class="fp-slide">
-
+                <div class="early-years-container">
+                    <div class="fp-slide">
                         <p id="early-years-title">Start of my coding experience</p>
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
 
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <div id="first-homework">
+                                    <a href="https://dancrump1.github.io/Psychic-Game/">
+                                        <img id="first-hw-picture" src="assets/images/firsthw.JPG">
+                                    </a>
+                                </div>
+                                <button class="detail-button">Details about project</button>
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p>Some text in the Modal..</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <div id="first-game">
+                                    <a href="https://dancrump1.github.io/articleAPI-ing/">
+                                        <img id="nytsearch-picture" src="assets/images/nytsearch.JPG" height="320px">
+                                    </a>
+                                </div>
+                                <button class="detail-button">Details about project</button>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <div id="first-game">
+                                    <a href="https://dancrump1.github.io/unit-4-game/">
+                                        <img id="first-game-picture" src="assets/images/firstgame.JPG" height="320px">
+                                    </a>
+                                </div>
+                                <button class="detail-button">Details about project</button>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <button class="prev" onclick="plusSlides(-1)" style="margin-right:200px">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)" style="margin-left:200px">&#10095;</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Second part of portfolio -->
+                <div class="rest-of-timeline">
+                    <div class="fp-slide">
+                        <p id="moving-forward-text">What I'm proud of</p>
                         <div class="projects-container">
 
-                            <div id="first-homework">
-                                <a href="https://dancrump1.github.io/Psychic-Game/">
-                                    <img id="first-hw-picture" src="assets/images/firsthw.JPG" height="160px" width="300px">
+                            <div id="first-project">
+                                <a href="https://pgould94.github.io/Munchies_Metropolis/index.html">
+                                    <img id="first-project-picture" src="assets/images/firstproject.JPG" height="260px"
+                                        width="600px">
                                 </a>
                             </div>
-
-                            <div id="first-game">
-                                <a href="https://dancrump1.github.io/unit-4-game/">
-                                    <img id="first-game-picture" src="assets/images/firstgame.JPG" height="160px" width="300px">
-                                </a>
-                            </div>
-
-                            <div id="first-game">
-                                <a href="https://dancrump1.github.io/articleAPI-ing/">
-                                    <img id="nytsearch-picture" src="assets/images/nytsearch.JPG" height="160px" width="300px">
-                                </a>
-                            </div>
-
                         </div>
                     </div>
+
                 </div>
-            </div>
-            <!-- Second part of portfolio -->
-            <div class="rest-of-timeline">
-                    <div class="fp-slide">
-
-                    <p id="moving-forward-text">What I'm proud of</p>
-
-                    <div class="projects-container">
-
-                        <div>Coming Soon</div>
-                        <div id="first-project">
-                            <a href="https://pgould94.github.io/Munchies_Metropolis/index.html">
-                                <img id="first-project-picture" src="assets/images/firstproject.JPG" height="260px"
-                                    width="600px">
-                            </a>
-                        </div>
-                        <div>Coming Soon</div>
-                    </div>
-                </div>
-
             </div>
         </div>
-        <div id="transition2">    </div>
+
+
+        <div id="transition2"> </div>
 
 
         <div class="fp-section contact-container">
-
+            <a href="contact"></a>
             <!-- Contact section -->
             <div class="contact-container">
+
                 <h1>Get in contact with me!</h1>
-                <li><a href="https://github.com/dancrump1">About Me</a></li>
+                <div id="contact-info-container">
+                    <a href="https://github.com/dancrump1">
+                        <img src="assets/images/githublogo.png" height="120px">
+                    </a>
+
+
+
+                    <a href="https://www.linkedin.com/in/daniel-crump-77197a120/">
+                        <img src="assets/images/linkedinlogo.png" height="120px">
+                    </a>
+                    
+<a href="assets/images/resume.JPG"><img src="assets/images/myresume.png" height="120px"></a>
+                   
+
+                </div>
             </div>
         </div>
     </div>
+    <script src="assets/js/seriouslypleasehireme.js"></script>
 
 
 </body>
@@ -115,5 +170,7 @@
 
     });
 </script>
+
+
 
 </html>

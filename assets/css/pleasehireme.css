@@ -14,19 +14,20 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
     height: 100vh;
-    background-color: green;
+    background-color: rgb(2, 62, 167);
 
 }
 
 #transition1{
-    background-image: linear-gradient(green, blue);
+    background-image: linear-gradient(rgb(2, 62, 167), #5640d5);
     height: 800px;
 }
 
 #transition2{
-    background-image: linear-gradient(blue, purple);
+    background-image: linear-gradient(#5640d5, #047b0c);
     height: 800px;
 }
 
@@ -35,75 +36,55 @@ h1 {
     font-size: 120px;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
+    color: #55d6aa;
+    text-align: center ;
     /* background: -webkit-linear-gradient(rgb(99, 14, 130), rgb(32, 174, 49)); */
     /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
 
-.title-page-pic {
-    padding-bottom: 10px;
+#quote-text{
+    color: #55d6aa;
+text-align: center;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+font-size: 50px;
 }
 
-#rotate90 {
-    transform: rotate(90deg)
+#early-years-title{
+    color: #55d6aa;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+font-size: 70px;
 }
-
-/* holder for both timelines */
-.timeline-container {
-    background-color: black;
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
-    /* grid-gap: 3px; */
-    height: 100vh;
-}
-
 
 /* Stuff before project 1 */
 .early-years-container {
-    /* background-color: aquamarine; */
-background-color: blue;
+background-color: #5640d5;
     text-align: center;
-}
-
-#transition2{
-    background-image: linear-gradient(blue, purple)
 }
 
 /* timeline w/ project 1 */
 .rest-of-timeline {
     text-align: center;
-    background: url(../images/willsmith.png);
-    background-position: right top;
-    /* background-color: brown; */
-    /* background-image: linear-gradient(green, rgb(0, 86, 0)); */
-background-color: blue;
-    background-repeat: no-repeat;
+background-color: #5640d5;
 
 }
 
 /* holds all projects in both containers */
 .projects-container {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr;
-    height: 100vh;
+text-align: center;
 }
 
 
 
-header {
-    width: 100%;
-    text-align: center;
-    color: white;
-    stroke-width: 3px;
-    background-position-y: center;
-}
 
-#early-years-title {
-    font-size: 40px;
-}
 
 #moving-forward-text {
-    font-size: 40px;
+    color: #55d6aa;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 70px;
 }
 
 #first-hw-picture {}
@@ -116,7 +97,14 @@ header {
     /* background-color: blue; */
     /* background-image: linear-gradient(green, rgb(0, 86, 0)); */
     height: 100vh;
-background-color: purple;
+background-color: #047b0c;
+}
+
+
+#contact-info-container{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+text-align: center;
 }
 
 
@@ -141,33 +129,92 @@ background-color: purple;
 
 /* NavBar */
 
-#navbar {
+/* #navbar {
     background-color: #333;
     /* Black background color */
-    position: fixed;
+    /* position: fixed; */
     /* Make it stick/fixed */
-    bottom: -50px;
+    /* bottom: -50px; */
     /* Hide the navbar 50 px outside of the top view */
-    width: 100%;
+    /* width: 100%; */
     /* Full width */
-    transition: bottom 0.3s;
+    /* transition: bottom 0.3s; */
     /* Transition effect when sliding down (and up) */
-}
+/* } */ 
 
 /* Style the navbar links */
-#navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+.container {
+	width: 80%;
+    margin: 0 auto;
+
+
 }
 
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
+header {
+  background: #55d6aa;
+height: 50px;
+position: fixed;
+z-index: 1;
+width: 100%;
 }
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
 
 /* three buttons at the top of the page
 
@@ -206,4 +253,47 @@ top: 0;
 /* display: table-cell;
 vertical-align: bottom; */
 /* } */
+
+.numbertext{
+    color: white;
+    font-size: 60px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
