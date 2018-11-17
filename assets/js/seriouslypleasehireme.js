@@ -31,11 +31,13 @@ function showSlides(n) {
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
+
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
     slides[slideIndex-1].style.display = "block"; 
+    
 };
 
 // $(document).ready(function () {
@@ -51,8 +53,9 @@ function showSlides(n) {
 //   });
 // });
 // Get the modal
-var modal = document.getElementById('myModal');
 
+
+var modal = document.getElementById(`myModal`);
 // Get the button that opens the modal
 var btn = document.getElementsByClassName("detail-button");
 
@@ -61,8 +64,11 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
 $(".detail-button").on("click", function() {
+    var detailButtonNumber = this.dataset.details;
+    modal = document.getElementById(`myModal${detailButtonNumber}`);
     modal.style.display = "block";
     console.log("firing");
+    console.log(detailButtonNumber);
 })
 
 // When the user clicks on <span> (x), close the modal
