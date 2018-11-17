@@ -152,6 +152,7 @@ text-align: center;
 
 }
 
+
 header {
   background: #55d6aa;
 height: 50px;
@@ -185,7 +186,6 @@ nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 23px;
-
   position: relative;
 }
 
@@ -194,6 +194,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  padding-top: 30px;
 }
 
 nav a:hover {
@@ -264,7 +265,7 @@ vertical-align: bottom; */
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: relative; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 200vh;
