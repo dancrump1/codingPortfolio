@@ -17,17 +17,17 @@ body {
     display: grid;
     grid-template: 1fr 1fr / 1fr;
     height: 100vh;
-    background-color: rgb(2, 62, 167);
+    background-color: #2d3935;
 
 }
 
 #transition1{
-    background-image: linear-gradient(rgb(2, 62, 167), #5640d5);
+    background-image: linear-gradient(#2d3935, #112122);
     height: 800px;
 }
 
 #transition2{
-    background-image: linear-gradient(#5640d5, #047b0c);
+    background-image: linear-gradient(#112122, #2d3935);
     height: 800px;
 }
 
@@ -60,14 +60,14 @@ font-size: 70px;
 
 /* Stuff before project 1 */
 .early-years-container {
-background-color: #5640d5;
+background-color: #112122;
     text-align: center;
 }
 
 /* timeline w/ project 1 */
 .rest-of-timeline {
     text-align: center;
-background-color: #5640d5;
+background-color: #112122;
 
 }
 
@@ -97,7 +97,7 @@ text-align: center;
     /* background-color: blue; */
     /* background-image: linear-gradient(green, rgb(0, 86, 0)); */
     height: 100vh;
-background-color: #047b0c;
+background-color: #2d3935;
 display: grid;
 grid-template: 1fr 1fr / 1fr;
 }
@@ -146,7 +146,7 @@ text-align: center;
 
 /* Style the navbar links */
 .container {
-	width: 80%;
+	/* width: 80%; */
     margin: 0 auto;
 
 
@@ -158,7 +158,9 @@ header {
 height: 50px;
 position: fixed;
 z-index: 1;
-width: 100%;
+width: 50%;
+left: 25%;
+border-radius: 0px 0px 15px 15px;
 }
 
 header::after {
@@ -173,7 +175,7 @@ header::after {
 }
 
 nav {
-  float: right;
+  /* float: right; */
 }
 
 nav ul {
