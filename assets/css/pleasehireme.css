@@ -302,3 +302,33 @@ bottom: 0px;
     cursor: pointer;
 }
 
+/* project caurosell */
+
+.numbertext{
+    color: #55d6aa;
+}
+
+.prev{
+background-color: #55d6aa;
+border-radius: 15px;
+}
+.next{
+background-color: #55d6aa;
+border-radius: 15px;
+}
+.detail-button{
+    background-color: #B4B7BA;
+}
+#first-game-picture{
+    border-radius: 30px;
+}
+#first-hw-picture{
+        border-radius: 30px;
+}
+#nytsearch-picture{
+border-radius: 30px;
+}
+
+#first-project-picture{
+    border-radius: 30px;
+}
